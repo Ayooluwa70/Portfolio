@@ -1,13 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayooluwa's Portfolio</title>
-</head>
-<body>
-    <h1>Hello! I’m Ayooluwa 👋</h1>
-    <p>Welcome to my portfolio website.</p>
-    <p>More updates coming soon!</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayo portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://font.googleapis.com/css2?family=poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">My porfolio</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hello,I'm <span class="highlight"> Ayooluwa </span></h1>
+        <p>Aspiring frontend Developer</p>
+        <a href="#projects" class="cta-button">See My Work</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm an aspiring frontend developer with a passion for creating
+            beautiful and functional web experiences. I enjoy turning ideas into
+            code and solving problems with technology.
+          </p>
+          <p>
+            I'm skilled in HTML, CSS, and JavaScript, and I'm currently learning
+            more about modern frameworks. My goal is to build clean,
+            user-focused web apps that make life easier.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img src="images/download.jpeg" alt="Your photo" />
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img
+            src="images/Screenshot 2025-05-29 110608.png"
+            alt="Project 1 Screenshot"
+          />
+          <h3>Age Calculator</h3>
+          <p>
+            A simple and responsive Age calculator built with HTML, CSS, and
+            JavaScript.
+          </p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <a
+            href="projects2/age-calculator/index.html"
+            target="_blank"
+            class="btn"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/Ayooluwa70/age-calculator"
+            target="_blank"
+            class="btn"
+            >Source Code</a
+          >
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img
+            src="images/Screenshot 2025-05-29 094828.png"
+            alt="Project 2 Screenshot"
+          />
+          <h3>Tip Calculator</h3>
+          <p>
+            A task manager with local storage, where users can add, edit, and
+            delete tasks.
+          </p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <a
+            href="projects/tip-calculator/index.html"
+            target="_blank"
+            class="btn"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/Ayooluwa70/tip-calculator"
+            target="_blank"
+            class="btn"
+            >Source Code</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <label>HTML</label>
+          <div class="progress">
+            <div class="progress-bar" id="progress90">90%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <label>CSS</label>
+          <div class="progress">
+            <div class="progress-bar" id="progress80">80%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <label>JavaScript</label>
+          <div class="progress">
+            <div class="progress-bar" id="progress70">70%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="experience-section">
+      <h2>My Experience</h2>
+      <div class="experience-container">
+        <div class="experience-card">
+          <h3>New Horizons ICT Resource Center</h3>
+          <p><strong>Role:</strong> Frontend Development Student</p>
+          <p><strong>Duration:</strong> Feb 2025 – April 2025</p>
+          <ul>
+            <li>Completed Advanced Frontend Certificat ion course</li>
+            <li>Built responsive websites using HTML, CSS, and JavaScript</li>
+            <li>Learned version control with Git & GitHub</li>
+            <li>Simulated interview with Tech-Genie International</li>
+          </ul>
+        </div>
+      <div class="experience-container">
+        <div class="experience-card">
+          <h3>Googfy web services</h3>
+          <p><strong>Role:</strong> Frontend Development Student</p>
+          <p><strong>Duration:</strong> Feb 2025 – April 2025</p>
+          <ul>
+            <li>Completed Advanced Frontend Certificat ion course</li>
+            <li>Built responsive websites using HTML, CSS, and JavaScript</li>
+            <li>Learned version control with Git & GitHub</li>
+            <li>Simulated interview with Tech-Genie International</li>
+          </ul>
+        </div>
+
+        <!-- Add more experience entries below if needed -->
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="hidden" name="access_key" value="c63ce2b7-a9da-43d3-b8b1-0e5488399b55">
+        <input type="email"  name="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required name="message"></textarea>
+        <button type="submit">Send Message</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
