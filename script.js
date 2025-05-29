@@ -40,3 +40,15 @@ function animateSkills() {
 }
 
 window.addEventListener('scroll', animateSkills);
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Define the /output route
+app.get('/output', (req, res) => {
+  res.send('This is the output page!');
+});
+
+app.listen(port, () => {
+  console.log(Server running at http://localhost:${port});
+});
